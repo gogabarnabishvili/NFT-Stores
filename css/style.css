@@ -215,8 +215,10 @@ h1>a {
     line-height: 32px;
 }
 
-.currentBid>h4 {
-    font-size: 24px;
+.currentBid>h4,
+.bid>h3,
+.userForm h3 {
+    font-size: 20px;
     color: #fff;
 }
 
@@ -325,6 +327,10 @@ h1>a {
     width: 30%;
 }
 
+.sectionWraper {
+    justify-content: center;
+}
+
 .smollBoxImg {
     width: 360px;
     height: 360px;
@@ -336,4 +342,61 @@ h1>a {
 .smollBoxImg>img {
     width: 90%;
     height: 90%;
+}
+
+.section3SmollBox {
+    flex-direction: column;
+    padding: 25px;
+}
+
+.bottomSmollBox {
+    padding: 25px;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(169, 222, 238, 0.1);
+}
+
+.bottomSmollBox>h2 {
+    font-size: 24px;
+}
+
+.bottomSmollBox>button {
+    width: 100%;
+    height: 70px;
+    background-color: #A9DEEE;
+    border: none;
+    color: #123B53;
+    font-weight: 800;
+}
+
+.bidPrice {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bid {
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+    padding: 20px;
+    background-color: #a9deee1a;
+}
+
+.bid>p {
+    font-size: 13px;
+}
+
+.userForm {
+    gap: 15px;
+    align-items: center;
+}
+
+.artistUser>p {
+    margin: 6px 0;
+}
+
+.userForm>img {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
 }
