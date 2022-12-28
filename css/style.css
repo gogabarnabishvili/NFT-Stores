@@ -127,8 +127,9 @@ h1>a {
 
 .section1LeftBox>h2,
 .section2LeftBox>h2,
-.section3Title>h2 {
-    font-size: 60px;
+.section3Title>h2,
+.section4Title>h2 {
+    font-size: 52px;
     line-height: 140%;
     color: #fff;
 }
@@ -399,4 +400,128 @@ h1>a {
     width: 53px;
     height: 53px;
     border-radius: 50%;
+}
+
+
+/* section 4 */
+
+.section4 {
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blur4 {
+    top: 0;
+    left: 0;
+}
+
+.section4Wraper {
+    width: 34%;
+    text-align: center;
+}
+
+.section4BoxWrap {
+    justify-content: space-evenly;
+}
+
+.section4Text>button {
+    width: 216px;
+    height: 70px;
+    background-color: #A9DEEE;
+    border: none;
+    color: #123B53;
+    font-weight: 800;
+    margin-top: 45px;
+}
+
+.section4Title {
+    margin-top: 140px;
+}
+
+.section4SmollBox {
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 330px;
+    background-color: #a9deee1a;
+    margin: 90px 0 140px;
+}
+
+.section4SmollBoxContent {
+    width: 85%;
+    height: 85%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section4SmollBoxContent>div {
+    width: 52px;
+    height: 52px;
+    background-color: #A9DEEE;
+    box-shadow: 10px 10px #b1e0ee1a;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4SmollBoxContent>h3 {
+    color: #fff;
+}
+
+.section4SmollBoxContent>p {
+    line-height: 34px;
+    text-align: center;
+}
+
+.blur5 {
+    top: 750px;
+    left: 965px;
+}
+
+
+/* section 5 */
+
+.section5 {
+    justify-content: center;
+}
+
+.section5Box {
+    width: 85%;
+    height: 440px;
+    background-color: #A9DEEE;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 10px #888888;
+}
+
+.section5Box>h2 {
+    font-size: 53px;
+    line-height: 74px;
+    width: 40%;
+    text-align: center;
+    color: #123B53;
+}
+
+.btnEmail {
+    justify-content: space-around;
+    width: 40%;
+    height: 98px;
+    background-color: #123B53;
+    align-items: center;
+}
+
+.btnEmail>button {
+    width: 144px;
+    height: 70%;
+    background-color: #A9DEEE;
+    border: none;
+    color: #123B53;
+    font-weight: 800;
+}
+
+.btnEmail>a {
+    align-items: center;
 }
