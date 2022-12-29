@@ -152,6 +152,7 @@ h1>a {
     width: 35%;
     height: 85%;
     border: none;
+    cursor: pointer;
 }
 
 .section1Btn>button:first-of-type {
@@ -245,7 +246,7 @@ h1>a {
     position: relative;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .section2Bgimg {
@@ -310,7 +311,7 @@ h1>a {
 
 .section3 {
     margin-top: 80px;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .section3Title {
@@ -410,7 +411,7 @@ h1>a {
     margin-top: 60px;
     position: relative;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .blur4 {
@@ -494,7 +495,9 @@ h1>a {
     background-color: #A9DEEE;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 10px #888888;
+    justify-content: center;
+    gap: 40px;
+    /* box-shadow: 5px 10px #888888; */
 }
 
 .section5Box>h2 {
@@ -524,4 +527,52 @@ h1>a {
 
 .btnEmail>a {
     align-items: center;
+}
+
+
+/* footer */
+
+footer {
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.footer1 {
+    justify-content: space-between;
+}
+
+.footerLeftBox {
+    flex-direction: column;
+    gap: 35px;
+    width: 30%;
+}
+
+.footerContact>img {
+    width: 43px;
+    margin-right: 25px;
+}
+
+.footerRinghtbox {
+    width: 40%;
+}
+
+.footerRinghtbox>table {
+    width: 100%;
+}
+
+table th {
+    color: #fff;
+    font-size: 24px;
+}
+
+table th,
+td {
+    padding: 15px;
+    text-align: start;
+    cursor: pointer;
+}
+
+table td:hover {
+    font-size: 22px;
+    transition: 0.5s;
 }
