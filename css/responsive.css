@@ -3,6 +3,9 @@
         width: 100%;
         height: 300px;
     } */
+    .displayNone {
+        display: none;
+    }
     .navUl {
         position: absolute;
         flex-direction: column;
@@ -53,7 +56,8 @@
         height: 60%;
     }
     .section1LeftBox>h2,
-    .section2LeftBox>h2 {
+    .section2LeftBox>h2,
+    .section3Title>h2 {
         font-size: 34px;
     }
     .section1LeftBox,
@@ -73,6 +77,9 @@
         width: auto;
     }
     /* section 2 */
+    .section2Bgimg {
+        width: 90%;
+    }
     .section2 {
         margin-top: 60px;
     }
@@ -88,5 +95,107 @@
     .section2Register {
         width: 70%;
         font-weight: 800;
+    }
+    /* section 3 */
+    .section3 {
+        justify-content: center;
+    }
+    .section3Title {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .section3Title>h2 {
+        width: 90%;
+    }
+    .section3Title>p {
+        width: 90%;
+    }
+    /* section 3 test  */
+    .smollBoxImg {
+        width: 209px;
+        height: 209px;
+        background-color: azure;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottomSmollBox {
+        padding: 25px;
+        flex-direction: column;
+        gap: 40px;
+        background: rgba(169, 222, 238, 0.1);
+        width: 209px;
+    }
+    .bidPrice {
+        width: 100%;
+        height: 33%;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .bid {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 13px;
+        background-color: #a9deee1a;
+    }
+    .userForm>img {
+        width: 45px;
+        height: 45px;
+    }
+    .artistUser>p {
+        font-size: 13px;
+    }
+    .userForm h3 {
+        font-size: 16px;
+    }
+    .overFlow {
+        overflow: auto;
+    }
+    /* section 4 */
+    .section4Wraper {
+        width: 90%;
+    }
+    .section4Title>h2 {
+        font-size: 34px;
+    }
+    .section4SmollBoxContent {
+        width: 70%;
+    }
+    .section4BoxWrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 50px 0 100px;
+    }
+    .section4SmollBox {
+        width: 90%;
+        height: 406px;
+        margin: 0;
+    }
+    /* section 5 */
+    .section5Box>h2 {
+        font-size: 34px;
+        width: 85%;
+        line-height: 42px;
+    }
+    .btnEmail {
+        flex-direction: column;
+        width: 85%;
+    }
+    .btnEmailRes {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: none;
+        color: #123B53;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    /* footer */
+    .footer1 {
+        justify-content: center;
+    }
+    .footerLeftBox {
+        width: 75%;
     }
 }
