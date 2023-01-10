@@ -1,576 +1,574 @@
-                /* font-family: 'Nunito Sans', sans-serif; */
-            /* .visibilityHidden {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    visibility: hidden;
-    opacity: 0;
-    /* display: none; */
-            /* */
-            /* font-family: 'Maven Pro', sans-serif; */
-            
-            .fontNunitoBold {
-                color: #A9DEEE;
-                font-family: 'Nunito Sans', sans-serif;
-                font-size: 18px;
-            }
-            
-            .fontMavenBold {
-                font-family: 'Maven Pro', sans-serif;
-                color: #A9DEEE;
-            }
-            
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                text-decoration: none;
-                list-style: none;
-            }
-            
-            .displayFlex {
-                display: flex;
-            }
-            
-            main {
-                background-color: #123B53;
-                overflow: hidden;
-            }
-            
-            .section1 {
-                width: 100%;
-                height: 900px;
-                padding-top: 68px;
-                position: relative;
-                z-index: 1;
-            }
-            
-            .blur,
-            .blur2,
-            .blur3 {
-                position: absolute;
-                left: -100px;
-                top: -20px;
-                width: 550px;
-                height: 580px;
-                background-image: url(../img/blur.png);
-                background-size: cover;
-                filter: blur(80px);
-                z-index: 2;
-            }
-            
-            .blur2 {
-                position: absolute;
-                left: 180px;
-                top: 627px;
-            }
-            /* .section1Bgimg,
- {
-    position: absolute;
-    background-image: url(../img/section-1-div-Img.png);
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    z-index: -1;
-} */
-            
-            .section1Bgimg {
-                width: 50%;
-                height: 100%;
-                position: absolute;
-                background-size: cover;
-                top: 0;
-                right: 0;
-                z-index: -1;
-            }
-            
-            header {
-                justify-content: space-around;
-                align-items: center;
-            }
-            
-            h1 {
-                align-items: center;
-            }
-            
-            h1>a {
-                font-size: 32px;
-            }
-            
-            .headerNav {
-                width: 37%;
-                gap: 100px;
-            }
-            
-            .navUl {
-                align-items: center;
-                gap: 50px;
-            }
-            
-            .conenect>button {
-                width: 190px;
-                height: 70px;
-                background-color: #123B53;
-                border: none;
-                font-weight: 800;
-                cursor: pointer;
-                z-index: 10;
-            }
-            
-            .section1Wraper,
-            .section2Wraper {
-                justify-content: center;
-                margin-top: 83px;
-                position: relative;
-                flex-wrap: wrap-reverse;
-            }
-            
-            .section1LeftBox,
-            .section2LeftBox {
-                width: 37%;
-            }
-            
-            .section1LeftBox>h2,
-            .section2LeftBox>h2,
-            .section3Title>h2,
-            .section4Title>h2 {
-                font-size: 52px;
-                line-height: 140%;
-                color: #fff;
-            }
-            
-            .section1LeftBox>p,
-            .section2LeftBox>p {
-                line-height: 34px;
-                color: #fafafacc;
-                width: 80%;
-                margin: 24px 0 50px;
-            }
-            
-            .section1Btn {
-                width: 100%;
-                height: 15%;
-            }
-            
-            .section1Btn button {
-                width: 35%;
-                height: 85%;
-                border: none;
-                cursor: pointer;
-            }
-            
-            .section1Btn>button:first-of-type {
-                background-color: #A9DEEE;
-                font-weight: 800;
-                color: #123B53;
-            }
-            
-            .section1Btn>button:last-of-type {
-                background-color: initial;
-                font-weight: 700;
-            }
-            
-            .section1LeftBox>h2>span,
-            .section2LeftBox>h2>span,
-            .section3Title>h2>span {
-                color: #A9DEEE;
-            }
-            
-            .section1RinghtBox,
-            .section2RinghtBox {
-                width: 550px;
-                height: 550px;
-                background: #fafafa26;
-                backdrop-filter: blur(45px);
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .monkeyImg,
-            .monkeyImg2 {
-                width: 85%;
-                height: 85%;
-            }
-            
-            .crushed,
-            .crushed2 {
-                width: 60%;
-                height: 40%;
-                background-color: #123B53;
-                position: absolute;
-                bottom: 80px;
-                right: -30px;
-                flex-direction: column;
-                gap: 25px;
-                padding: 25px;
-            }
-            
-            .crushed>h3 {
-                color: #fff;
-            }
-            
-            .currentBid {
-                width: 100%;
-                height: 60%;
-                background-color: rgba(169, 222, 238, 0.1);
-                padding: 10px;
-            }
-            
-            .currentBid>p {
-                font-size: 13px;
-                line-height: 32px;
-            }
-            
-            .currentBid>h4,
-            .bid>h3,
-            .userForm h3 {
-                font-size: 20px;
-                color: #fff;
-            }
-            
-            .currentBid>h4>span {
-                font-size: 18px;
-                color: rgba(255, 255, 255, 0.6);
-            }
-            
-            .section1BottomLine {
-                width: 100%;
-                height: 186px;
-                /* position: absolute;
-    bottom: 0; */
-                background: rgba(250, 250, 250, 0.1);
-                backdrop-filter: blur(45px);
-            }
-            /* section 2 */
-            
-            .section2 {
-                width: 100%;
-                position: relative;
-                flex-direction: column;
-                align-items: center;
-                overflow-x: clip;
-            }
-            
-            .section2Bgimg {
-                position: absolute;
-                top: 186px;
-                left: 0;
-            }
-            /* .section2Bgimg {
-    background-image: url(../img/section-2-div-Img.png);
-    top: 0;
-    left: 0;
-} */
-            
-            .section2Wraper {
-                margin-top: 130px;
-                align-items: center;
-                width: 82%;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-            
-            .monkeyImg2 {
-                box-shadow: -5px 19px 85px -16px #E5E5E5;
-            }
-            
-            .section2RinghtBox {
-                width: 509px;
-                height: 509px;
-            }
-            
-            .crushed2 {
-                bottom: 240px;
-                left: -60px;
-            }
-            
-            .section2Btn {
-                height: 40%;
-            }
-            
-            .section2Register {
-                width: 50%;
-                height: 10vh;
-                background-color: #A9DEEE;
-                color: #123B53;
-                border: none;
-                cursor: pointer;
-            }
-            
-            .section2LeftBox {
-                height: 70%;
-            }
-            
-            .blur3 {
-                left: 870px;
-                top: 430px;
-                transform: rotate(-79deg);
-            }
-            /* section 3 */
-            
-            .section3 {
-                margin-top: 80px;
-                overflow-x: clip;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            
-            .section3Title {
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            
-            .section3Title>h2 {
-                font-size: 52px;
-                line-height: 75px;
-                width: 40%;
-            }
-            
-            .section3Title>p {
-                width: 30%;
-            }
-            
-            .sectionWraper {
-                justify-content: center;
-            }
-            
-            .smollBoxImg {
-                width: 360px;
-                height: 360px;
-                background-color: azure;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .smollBoxImg>img {
-                width: 90%;
-                height: 90%;
-            }
-            
-            .section3SmollBox {
-                flex-direction: column;
-                padding: 25px;
-            }
-            
-            .bottomSmollBox {
-                padding: 25px;
-                flex-direction: column;
-                gap: 30px;
-                background: rgba(169, 222, 238, 0.1);
-            }
-            
-            .bottomSmollBox>h2 {
-                font-size: 24px;
-            }
-            
-            .bottomSmollBox>button {
-                width: 100%;
-                height: 70px;
-                background-color: #A9DEEE;
-                border: none;
-                color: #123B53;
-                font-weight: 800;
-            }
-            
-            .bidPrice {
-                width: 100%;
-                justify-content: space-between;
-            }
-            
-            .bid {
-                flex-direction: column;
-                gap: 10px;
-                width: 45%;
-                padding: 20px;
-                background-color: #a9deee1a;
-            }
-            
-            .bid>p {
-                font-size: 13px;
-            }
-            
-            .userForm {
-                gap: 15px;
-                align-items: center;
-            }
-            
-            .artistUser>p {
-                margin: 6px 0;
-            }
-            
-            .userForm>img {
-                width: 53px;
-                height: 53px;
-                border-radius: 50%;
-            }
-            /* section 4 */
-            
-            .section4 {
-                align-items: center;
-                margin-top: 60px;
-                position: relative;
-                flex-direction: column;
-                overflow-x: clip;
-            }
-            
-            .blur4 {
-                top: 0;
-                left: 0;
-            }
-            
-            .section4Wraper {
-                width: 34%;
-                text-align: center;
-            }
-            
-            .section4BoxWrap {
-                justify-content: space-evenly;
-            }
-            
-            .section4Text>button {
-                width: 216px;
-                height: 70px;
-                background-color: #A9DEEE;
-                border: none;
-                color: #123B53;
-                font-weight: 800;
-                margin-top: 45px;
-            }
-            
-            .section4Title {
-                margin-top: 140px;
-            }
-            
-            .section4SmollBox {
-                justify-content: center;
-                align-items: center;
-                width: 25%;
-                height: 330px;
-                background-color: #a9deee1a;
-                margin: 90px 0 140px;
-            }
-            
-            .section4SmollBoxContent {
-                width: 85%;
-                height: 85%;
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-            }
-            
-            .section4SmollBoxContent>div {
-                width: 52px;
-                height: 52px;
-                background-color: #A9DEEE;
-                box-shadow: 10px 10px #b1e0ee1a;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .section4SmollBoxContent>h3 {
-                color: #fff;
-            }
-            
-            .section4SmollBoxContent>p {
-                line-height: 34px;
-                text-align: center;
-            }
-            
-            .blur5 {
-                top: 750px;
-                left: 965px;
-            }
-            /* section 5 */
-            
-            .section5 {
-                justify-content: center;
-            }
-            
-            .section5Box {
-                width: 85%;
-                height: 440px;
-                background-color: #A9DEEE;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 40px;
-                /* box-shadow: 5px 10px #888888; */
-            }
-            
-            .section5Box>h2 {
-                font-size: 53px;
-                line-height: 74px;
-                width: 40%;
-                text-align: center;
-                color: #123B53;
-            }
-            
-            .btnEmail {
-                justify-content: space-around;
-                width: 40%;
-                height: 98px;
-                background-color: #123B53;
-                align-items: center;
-            }
-            
-            .btnEmail>button {
-                width: 144px;
-                height: 70%;
-                background-color: #A9DEEE;
-                border: none;
-                color: #123B53;
-                font-weight: 800;
-            }
-            
-            .btnEmail>a {
-                align-items: center;
-            }
-            /* footer */
-            
-            footer {
-                justify-content: center;
-                margin-top: 140px;
-            }
-            
-            .footer1 {
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-            
-            .footerLeftBox {
-                flex-direction: column;
-                gap: 35px;
-                width: 30%;
-            }
-            
-            .footerContact>img {
-                width: 43px;
-                margin-right: 25px;
-            }
-            
-            .footerRinghtbox {
-                width: 40%;
-            }
-            
-            .footerRinghtbox>table {
-                width: 100%;
-            }
-            
-            table th {
-                color: #fff;
-                font-size: 24px;
-            }
-            
-            table th,
-            td {
-                padding: 15px;
-                text-align: start;
-                cursor: pointer;
-            }
-            
-            table td:hover {
-                font-size: 22px;
-                transition: 0.5s;
+                                /* font-family: 'Nunito Sans', sans-serif; */
+                                /* .visibilityHidden {
+
+                                
+                                /* font-family: 'Maven Pro', sans-serif; */
+                                
+                                .fontNunitoBold {
+                                    color: #A9DEEE;
+                                    font-family: 'Nunito Sans', sans-serif;
+                                    font-size: 18px;
+                                }
+                                
+                                .fontMavenBold {
+                                    font-family: 'Maven Pro', sans-serif;
+                                    color: #A9DEEE;
+                                }
+                                
+                                * {
+                                    padding: 0;
+                                    margin: 0;
+                                    box-sizing: border-box;
+                                    text-decoration: none;
+                                    list-style: none;
+                                }
+                                
+                                .displayFlex {
+                                    display: flex;
+                                }
+                                
+                                .burgerMenu {
+                                    visibility: hidden;
+                                    border: none;
+                                    background-color: initial;
+                                    cursor: pointer;
+                                }
+                                
+                                main {
+                                    background-color: #123B53;
+                                    overflow: hidden;
+                                }
+                                
+                                .section1 {
+                                    width: 100%;
+                                    height: 900px;
+                                    padding-top: 68px;
+                                    position: relative;
+                                    z-index: 1;
+                                }
+                                
+                                .blur,
+                                .blur2,
+                                .blur3 {
+                                    position: absolute;
+                                    left: -100px;
+                                    top: -20px;
+                                    width: 550px;
+                                    height: 580px;
+                                    background-image: url(../img/blur.png);
+                                    background-size: cover;
+                                    filter: blur(80px);
+                                    z-index: -2;
+                                }
+                                
+                                .blur2 {
+                                    position: absolute;
+                                    left: 180px;
+                                    top: 627px;
+                                }
+                                
+                                .section1Bgimg {
+                                    width: 50%;
+                                    height: 100%;
+                                    position: absolute;
+                                    background-size: cover;
+                                    top: 0;
+                                    right: 0;
+                                    z-index: -1;
+                                }
+                                
+                                header {
+                                    justify-content: space-around;
+                                    align-items: center;
+                                }
+                                
+                                h1 {
+                                    align-items: center;
+                                }
+                                
+                                h1>a {
+                                    font-size: 32px;
+                                }
+                                
+                                .headerNav {
+                                    width: 40%;
+                                    gap: 100px;
+                                }
+                                
+                                .navUl {
+                                    align-items: center;
+                                    gap: 50px;
+                                }
+                                
+                                .conenect>button {
+                                    margin-left: 30px;
+                                    width: 190px;
+                                    height: 70px;
+                                    background-color: #123B53;
+                                    border: none;
+                                    font-weight: 800;
+                                    cursor: pointer;
+                                    z-index: 10;
+                                }
+                                
+                                .section1Wraper,
+                                .section2Wraper {
+                                    justify-content: center;
+                                    margin-top: 83px;
+                                    position: relative;
+                                    flex-wrap: wrap-reverse;
+                                }
+                                
+                                .section1LeftBox,
+                                .section2LeftBox {
+                                    width: 37%;
+                                }
+                                
+                                .section1LeftBox>h2,
+                                .section2LeftBox>h2,
+                                .section3Title>h2,
+                                .section4Title>h2 {
+                                    font-size: 52px;
+                                    line-height: 140%;
+                                    color: #fff;
+                                }
+                                
+                                .section1LeftBox>p,
+                                .section2LeftBox>p {
+                                    line-height: 34px;
+                                    color: #fafafacc;
+                                    width: 80%;
+                                    margin: 24px 0 50px;
+                                }
+                                
+                                .section1Btn {
+                                    width: 100%;
+                                    height: 15%;
+                                }
+                                
+                                .section1Btn button {
+                                    width: 35%;
+                                    height: 85%;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                                
+                                .section1Btn>button:first-of-type {
+                                    background-color: #A9DEEE;
+                                    font-weight: 800;
+                                    color: #123B53;
+                                }
+                                
+                                .section1Btn>button:last-of-type {
+                                    background-color: initial;
+                                    font-weight: 700;
+                                }
+                                
+                                .section1LeftBox>h2>span,
+                                .section2LeftBox>h2>span,
+                                .section3Title>h2>span {
+                                    color: #A9DEEE;
+                                }
+                                
+                                .section1RinghtBox,
+                                .section2RinghtBox {
+                                    width: 550px;
+                                    height: 550px;
+                                    background: #fafafa26;
+                                    backdrop-filter: blur(45px);
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                .monkeyImg,
+                                .monkeyImg2 {
+                                    width: 85%;
+                                    height: 85%;
+                                }
+                                
+                                .crushed,
+                                .crushed2 {
+                                    width: 60%;
+                                    height: 40%;
+                                    background-color: #123B53;
+                                    position: absolute;
+                                    bottom: 80px;
+                                    right: -30px;
+                                    flex-direction: column;
+                                    gap: 25px;
+                                    padding: 25px;
+                                }
+                                
+                                .crushed>h3 {
+                                    color: #fff;
+                                }
+                                
+                                .currentBid {
+                                    width: 100%;
+                                    height: 60%;
+                                    background-color: rgba(169, 222, 238, 0.1);
+                                    padding: 10px;
+                                }
+                                
+                                .currentBid>p {
+                                    font-size: 13px;
+                                    line-height: 32px;
+                                }
+                                
+                                .currentBid>h4,
+                                .bid>h3,
+                                .userForm h3 {
+                                    font-size: 20px;
+                                    color: #fff;
+                                }
+                                
+                                .currentBid>h4>span {
+                                    font-size: 18px;
+                                    color: rgba(255, 255, 255, 0.6);
+                                }
+                                
+                                .section1BottomLine {
+                                    width: 100%;
+                                    height: 186px;
+                                    background: rgba(250, 250, 250, 0.1);
+                                    backdrop-filter: blur(45px);
+                                }
+                                /* section 2 */
+                                
+                                .section2 {
+                                    width: 100%;
+                                    position: relative;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    overflow-x: clip;
+                                }
+                                
+                                .section2Bgimg {
+                                    position: absolute;
+                                    top: 186px;
+                                    left: 0;
+                                }
+                                
+                                .section2Wraper {
+                                    margin-top: 130px;
+                                    align-items: center;
+                                    width: 82%;
+                                    justify-content: space-between;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .monkeyImg2 {
+                                    box-shadow: -5px 19px 85px -16px #E5E5E5;
+                                }
+                                
+                                .section2RinghtBox {
+                                    width: 509px;
+                                    height: 509px;
+                                }
+                                
+                                .crushed2 {
+                                    bottom: 240px;
+                                    left: -60px;
+                                }
+                                
+                                .section2Btn {
+                                    height: 40%;
+                                }
+                                
+                                .section2Register {
+                                    width: 50%;
+                                    height: 10vh;
+                                    background-color: #A9DEEE;
+                                    color: #123B53;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                                
+                                .section2LeftBox {
+                                    height: 70%;
+                                }
+                                
+                                .blur3 {
+                                    left: 1160px;
+                                    top: 500px;
+                                    transform: rotate(-79deg);
+                                    z-index: 1;
+                                }
+                                /* section 3 */
+                                
+                                .section3 {
+                                    margin-top: 170px;
+                                    overflow-x: clip;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .section3Title {
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .section3Title>h2 {
+                                    font-size: 52px;
+                                    line-height: 75px;
+                                    width: 40%;
+                                }
+                                
+                                .section3Title>p {
+                                    width: 25%;
+                                    line-height: 34px;
+                                }
+                                
+                                .sectionWraper {
+                                    justify-content: center;
+                                }
+                                
+                                .smollBoxImg {
+                                    width: 360px;
+                                    height: 360px;
+                                    background-color: #969696;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                .smollBoxImg>img {
+                                    width: 85%;
+                                    height: 85%;
+                                }
+                                
+                                .section3SmollBox {
+                                    flex-direction: column;
+                                    padding: 25px;
+                                }
+                                
+                                .bottomSmollBox {
+                                    padding: 25px;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    background: rgba(169, 222, 238, 0.1);
+                                }
+                                
+                                .bottomSmollBox>h2 {
+                                    font-size: 24px;
+                                }
+                                
+                                .bottomSmollBox>button {
+                                    width: 100%;
+                                    height: 70px;
+                                    background-color: #A9DEEE;
+                                    border: none;
+                                    color: #123B53;
+                                    font-weight: 800;
+                                    font-size: 18px;
+                                }
+                                
+                                .bidPrice {
+                                    width: 100%;
+                                    justify-content: space-between;
+                                }
+                                
+                                .bid {
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    width: 45%;
+                                    padding: 20px;
+                                    background-color: #a9deee1a;
+                                }
+                                
+                                .bid>p {
+                                    font-size: 13px;
+                                }
+                                
+                                .userForm {
+                                    gap: 15px;
+                                    align-items: center;
+                                }
+                                
+                                .artistUser>p {
+                                    margin: 6px 0;
+                                }
+                                
+                                .userForm>img {
+                                    width: 53px;
+                                    height: 53px;
+                                    border-radius: 50%;
+                                }
+                                /* section 4 */
+                                
+                                .section4 {
+                                    align-items: center;
+                                    margin-top: 60px;
+                                    position: relative;
+                                    flex-direction: column;
+                                    overflow-x: clip;
+                                }
+                                
+                                .blur4 {
+                                    z-index: 1;
+                                    top: 0;
+                                    left: 0;
+                                }
+                                
+                                .section4Wraper {
+                                    width: 34%;
+                                    text-align: center;
+                                }
+                                
+                                .section4BoxWrap {
+                                    justify-content: space-evenly;
+                                }
+                                
+                                .section4Text>button {
+                                    width: 216px;
+                                    height: 70px;
+                                    background-color: #A9DEEE;
+                                    border: none;
+                                    color: #123B53;
+                                    font-weight: 800;
+                                    margin-top: 45px;
+                                }
+                                
+                                .section4Title {
+                                    margin-top: 140px;
+                                }
+                                
+                                .section4SmollBox {
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 25%;
+                                    height: 330px;
+                                    background-color: #a9deee1a;
+                                    margin: 90px 0 140px;
+                                }
+                                
+                                .section4SmollBoxContent {
+                                    width: 75%;
+                                    height: 85%;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 30px;
+                                }
+                                
+                                .section4SmollBoxContent>div {
+                                    width: 52px;
+                                    height: 52px;
+                                    background-color: #A9DEEE;
+                                    box-shadow: 10px 10px #b1e0ee1a;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                                
+                                .section4SmollBoxContent>h3 {
+                                    color: #fff;
+                                }
+                                
+                                .section4SmollBoxContent>p {
+                                    line-height: 36px;
+                                    text-align: center;
+                                }
+                                
+                                .blur5 {
+                                    top: 750px;
+                                    left: 965px;
+                                }
+                                /* section 5 */
+                                
+                                .section5 {
+                                    justify-content: center;
+                                }
+                                
+                                .section5Box {
+                                    width: 85%;
+                                    height: 440px;
+                                    background-color: #A9DEEE;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 40px;
+                                    /* box-shadow: 5px 10px #888888; */
+                                }
+                                
+                                .section5Box>h2 {
+                                    font-size: 53px;
+                                    line-height: 74px;
+                                    width: 40%;
+                                    text-align: center;
+                                    color: #123B53;
+                                }
+                                
+                                .btnEmail {
+                                    justify-content: space-around;
+                                    width: 40%;
+                                    height: 98px;
+                                    background-color: #123B53;
+                                    align-items: center;
+                                }
+                                
+                                .btnEmail>button {
+                                    width: 144px;
+                                    height: 70%;
+                                    background-color: #A9DEEE;
+                                    border: none;
+                                    color: #123B53;
+                                    font-weight: 800;
+                                }
+                                
+                                .btnEmail>a {
+                                    align-items: center;
+                                    gap: 20px;
+                                }
+                                /* footer */
+                                
+                                footer {
+                                    justify-content: center;
+                                    margin-top: 140px;
+                                }
+                                
+                                .footer1 {
+                                    width: 90%;
+                                    justify-content: space-between;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .footerLeftBox {
+                                    flex-direction: column;
+                                    gap: 35px;
+                                    width: 30%;
+                                }
+                                
+                                .footerContact>img {
+                                    width: 43px;
+                                    margin-right: 25px;
+                                }
+                                
+                                .footerRinghtbox {
+                                    width: 40%;
+                                }
+                                
+                                .footerRinghtbox>table {
+                                    width: 100%;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                table th {
+                                    color: #fff;
+                                    font-size: 24px;
+                                }
+                                
+                                table th,
+                                td {
+                                    padding: 15px;
+                                    text-align: start;
+                                    cursor: pointer;
+                                }
+                                /* table td:hover {
+                                    font-size: 22px;
+                                    transition: 0.5s;
+                                } */
+                                
+                                .btnEmailRes {
+                                    display: none;
+                                }
