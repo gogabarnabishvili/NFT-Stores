@@ -1,8 +1,6 @@
-const responseNav = document.querySelector(".headerNav");
+const responseNav = document.querySelector(".navUl");
 
-function burgerManu(e) {
+
+function burgerManu() {
     responseNav.classList.toggle("visibilityHidden");
-
-    // responseNav.classList.toggle("animation");
-
 }

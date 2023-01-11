@@ -508,7 +508,7 @@
                                 }
                                 
                                 .btnEmail>button {
-                                    width: 144px;
+                                    width: 40%;
                                     height: 70%;
                                     background-color: #A9DEEE;
                                     border: none;
@@ -523,51 +523,69 @@
                                 /* footer */
                                 
                                 footer {
-                                    justify-content: center;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
                                     margin-top: 140px;
                                 }
                                 
-                                .footer1 {
-                                    width: 90%;
+                                .footerWraper {
+                                    justify-content: center;
+                                }
+                                
+                                .footerDiv {
+                                    justify-content: space-between;
+                                    width: 80%;
+                                }
+                                
+                                .footerTitle {
+                                    width: 25%;
+                                }
+                                
+                                .footerTitle>h2 {
+                                    color: #A9DEEE;
+                                    font-size: 34px;
+                                    gap: 14px;
+                                }
+                                
+                                .footerTitle>p {
+                                    line-height: 34px;
+                                    margin: 35px 0;
+                                }
+                                
+                                .footerList {
+                                    width: 50%;
                                     justify-content: space-between;
                                     flex-wrap: wrap;
                                 }
                                 
-                                .footerLeftBox {
-                                    flex-direction: column;
-                                    gap: 35px;
-                                    width: 30%;
-                                }
-                                
-                                .footerContact>img {
-                                    width: 43px;
-                                    margin-right: 25px;
-                                }
-                                
-                                .footerRinghtbox {
-                                    width: 40%;
-                                }
-                                
-                                .footerRinghtbox>table {
+                                .footerUl {
                                     width: 100%;
+                                    justify-content: space-between;
                                     flex-wrap: wrap;
                                 }
                                 
-                                table th {
-                                    color: #fff;
+                                .liTitle {
                                     font-size: 24px;
+                                    font-weight: 700;
+                                    color: #FAFAFA;
                                 }
                                 
-                                table th,
-                                td {
-                                    padding: 15px;
-                                    text-align: start;
-                                    cursor: pointer;
+                                .footerList li {
+                                    margin-top: 30px;
+                                    opacity: 0.85;
                                 }
-                                /* table td:hover {
-                                    font-size: 22px;
-                                    transition: 0.5s;
-                                } */
+                                
+                                .contact {
+                                    width: 25%;
+                                    gap: 27px;
+                                    margin-top: -40px;
+                                    margin-left: 10%;
+                                }
+                                
+                                .contact>img {
+                                    width: 46px;
+                                    height: 45px;
+                                }
                                 
                                 .btnEmailRes {
                                     display: none;
