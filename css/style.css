@@ -1,605 +1,622 @@
-                                .fontNunitoBold {
-                                    color: #A9DEEE;
-                                    font-family: 'Nunito Sans', sans-serif;
-                                    font-size: 18px;
-                                }
-                                
-                                .fontMavenBold {
-                                    font-family: 'Maven Pro', sans-serif;
-                                    color: #A9DEEE;
-                                }
-                                
-                                * {
-                                    padding: 0;
-                                    margin: 0;
-                                    box-sizing: border-box;
-                                    text-decoration: none;
-                                    list-style: none;
-                                }
-                                
-                                .displayFlex {
-                                    display: flex;
-                                }
-                                
-                                .burgerMenu {
-                                    visibility: hidden;
-                                    border: none;
-                                    background-color: initial;
-                                    cursor: pointer;
-                                }
-                                
-                                html {
-                                    scroll-behavior: smooth;
-                                }
-                                
-                                main {
-                                    background-color: #123B53;
-                                    overflow: hidden;
-                                }
-                                
-                                .section1 {
-                                    width: 100%;
-                                    height: 900px;
-                                    padding-top: 68px;
-                                    position: relative;
-                                    z-index: 1;
-                                }
-                                
-                                .blur,
-                                .blur2,
-                                .blur3 {
-                                    position: absolute;
-                                    left: -100px;
-                                    top: -20px;
-                                    width: 550px;
-                                    height: 580px;
-                                    background-image: url(../img/blur.png);
-                                    background-size: cover;
-                                    filter: blur(80px);
-                                    z-index: -2;
-                                }
-                                
-                                .blur2 {
-                                    position: absolute;
-                                    left: 180px;
-                                    top: 627px;
-                                }
-                                
-                                .section1Bgimg {
-                                    width: 50%;
-                                    height: 100%;
-                                    position: absolute;
-                                    background-size: cover;
-                                    top: 0;
-                                    right: 0;
-                                    z-index: -1;
-                                }
-                                
-                                header {
-                                    justify-content: space-around;
-                                    align-items: center;
-                                }
-                                
-                                h1 {
-                                    align-items: center;
-                                }
-                                
-                                h1>a {
-                                    font-size: 32px;
-                                }
-                                
-                                .headerNav {
-                                    width: 40%;
-                                    gap: 100px;
-                                }
-                                
-                                .navUl {
-                                    align-items: center;
-                                    gap: 50px;
-                                }
-                                /* .liA {
+.fontNunitoBold {
+    color: #a9deee;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+
+.fontMavenBold {
+    font-family: "Maven Pro", sans-serif;
+    color: #a9deee;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.burgerMenu {
+    visibility: hidden;
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #123b53;
+    overflow: hidden;
+}
+
+.section1 {
+    width: 100%;
+    height: 900px;
+    padding-top: 68px;
+    position: relative;
+    z-index: 1;
+}
+
+.blur,
+.blur2,
+.blur3 {
+    position: absolute;
+    left: -100px;
+    top: -20px;
+    width: 550px;
+    height: 580px;
+    background-image: url(../img/blur.png);
+    background-size: cover;
+    filter: blur(80px);
+    z-index: -2;
+}
+
+.blur2 {
+    position: absolute;
+    left: 180px;
+    top: 627px;
+}
+
+.section1Bgimg {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    align-items: center;
+}
+
+h1 > a {
+    font-size: 32px;
+}
+
+.headerNav {
+    width: 40%;
+    gap: 100px;
+}
+
+.navUl {
+    align-items: center;
+    gap: 50px;
+}
+/* .liA {
                                     scroll-behavior: smooth;
                                 }
                                  */
-                                
-                                .conenect>button {
-                                    margin-left: 60px;
-                                    width: 190px;
-                                    height: 70px;
-                                    background-color: #123B53;
-                                    border: none;
-                                    font-weight: 800;
-                                    cursor: pointer;
-                                    z-index: 10;
-                                }
-                                
-                                .section1Wraper,
-                                .section2Wraper {
-                                    justify-content: center;
-                                    margin-top: 83px;
-                                    position: relative;
-                                    flex-wrap: wrap-reverse;
-                                }
-                                
-                                .section1LeftBox {
-                                    flex-direction: column;
-                                    justify-content: center;
-                                }
-                                
-                                .section1LeftBox,
-                                .section2LeftBox {
-                                    width: 40%;
-                                }
-                                
-                                .section1LeftBox>h2,
-                                .section2LeftBox>h2,
-                                .section3Title>h2,
-                                .section4Title>h2 {
-                                    font-size: 52px;
-                                    line-height: 140%;
-                                    color: #fff;
-                                }
-                                
-                                .section1LeftBox>p,
-                                .section2LeftBox>p {
-                                    line-height: 34px;
-                                    color: #fafafacc;
-                                    width: 80%;
-                                    margin: 24px 0 50px;
-                                }
-                                
-                                .section1Btn {
-                                    width: 100%;
-                                    height: 15%;
-                                }
-                                
-                                .section1Btn button {
-                                    width: 35%;
-                                    height: 85%;
-                                    border: none;
-                                    cursor: pointer;
-                                }
-                                
-                                .section1Btn>button:first-of-type {
-                                    background-color: #A9DEEE;
-                                    font-weight: 800;
-                                    color: #123B53;
-                                }
-                                
-                                .section1Btn>button:last-of-type {
-                                    background-color: initial;
-                                    font-weight: 700;
-                                }
-                                
-                                .section1LeftBox>h2>span,
-                                .section2LeftBox>h2>span,
-                                .section3Title>h2>span {
-                                    color: #A9DEEE;
-                                }
-                                
-                                .section1RinghtBox,
-                                .section2RinghtBox {
-                                    width: 550px;
-                                    height: 550px;
-                                    background: #fafafa26;
-                                    backdrop-filter: blur(45px);
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                                
-                                .monkeyImg,
-                                .monkeyImg2 {
-                                    width: 85%;
-                                    height: 85%;
-                                }
-                                
-                                .crushed,
-                                .crushed2 {
-                                    width: 55%;
-                                    height: 35%;
-                                    background-color: #123B53;
-                                    position: absolute;
-                                    bottom: 80px;
-                                    right: -30px;
-                                    flex-direction: column;
-                                    gap: 25px;
-                                    padding: 25px;
-                                }
-                                
-                                .crushed>h3 {
-                                    color: #fff;
-                                }
-                                
-                                .currentBid {
-                                    width: 100%;
-                                    height: 60%;
-                                    background-color: rgba(169, 222, 238, 0.1);
-                                    padding: 10px;
-                                }
-                                
-                                .currentBid>p {
-                                    font-size: 13px;
-                                    line-height: 32px;
-                                }
-                                
-                                .currentBid>h4,
-                                .bid>h3,
-                                .userForm h3 {
-                                    font-size: 20px;
-                                    color: #fff;
-                                }
-                                
-                                .currentBid>h4>span {
-                                    font-size: 18px;
-                                    color: rgba(255, 255, 255, 0.6);
-                                }
-                                
-                                .section1BottomLine {
-                                    width: 100%;
-                                    height: 186px;
-                                    background: rgba(250, 250, 250, 0.1);
-                                    backdrop-filter: blur(45px);
-                                }
-                                /* section 2 */
-                                
-                                .section2 {
-                                    width: 100%;
-                                    position: relative;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    overflow-x: clip;
-                                }
-                                
-                                .section2Bgimg {
-                                    position: absolute;
-                                    top: 186px;
-                                    left: 0;
-                                }
-                                
-                                .section2Wraper {
-                                    margin-top: 130px;
-                                    align-items: center;
-                                    width: 82%;
-                                    justify-content: space-between;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .monkeyImg2 {
-                                    box-shadow: -5px 19px 85px -16px #E5E5E5;
-                                }
-                                
-                                .section2RinghtBox {
-                                    width: 509px;
-                                    height: 509px;
-                                }
-                                
-                                .crushed2 {
-                                    bottom: 240px;
-                                    left: -60px;
-                                }
-                                
-                                .section2Btn {
-                                    height: 40%;
-                                }
-                                
-                                .section2Register {
-                                    width: 55%;
-                                    height: 15vh;
-                                    background-color: #A9DEEE;
-                                    color: #123B53;
-                                    font-weight: 800;
-                                    border: none;
-                                    cursor: pointer;
-                                }
-                                
-                                .section2LeftBox {
-                                    height: 70%;
-                                }
-                                
-                                .blur3 {
-                                    left: 1160px;
-                                    top: 500px;
-                                    transform: rotate(-79deg);
-                                    z-index: 1;
-                                }
-                                /* section 3 */
-                                
-                                .section3 {
-                                    margin-top: 140px;
-                                    overflow-x: clip;
-                                    flex-direction: column;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .section3Title {
-                                    justify-content: space-evenly;
-                                    align-items: center;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .section3Title>h2 {
-                                    font-size: 52px;
-                                    line-height: 75px;
-                                    width: 40%;
-                                }
-                                
-                                .section3Title>p {
-                                    width: 25%;
-                                    line-height: 34px;
-                                }
-                                
-                                .sectionWraper {
-                                    justify-content: center;
-                                }
-                                
-                                .smollBoxImg {
-                                    width: 360px;
-                                    height: 360px;
-                                    background-color: #969696;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
-                                
-                                .smollBoxImg>img {
-                                    width: 85%;
-                                    height: 85%;
-                                }
-                                
-                                .section3SmollBox {
-                                    flex-direction: column;
-                                    padding: 25px;
-                                }
-                                
-                                .bottomSmollBox {
-                                    padding: 25px;
-                                    flex-direction: column;
-                                    gap: 30px;
-                                    background: rgba(169, 222, 238, 0.1);
-                                }
-                                
-                                .bottomSmollBox>h2 {
-                                    font-size: 24px;
-                                }
-                                
-                                .bottomSmollBox>button {
-                                    width: 100%;
-                                    height: 70px;
-                                    background-color: #A9DEEE;
-                                    border: none;
-                                    color: #123B53;
-                                    font-weight: 800;
-                                    font-size: 18px;
-                                }
-                                
-                                .bidPrice {
-                                    width: 100%;
-                                    justify-content: space-between;
-                                }
-                                
-                                .bid {
-                                    flex-direction: column;
-                                    gap: 10px;
-                                    width: 45%;
-                                    padding: 20px;
-                                    background-color: #a9deee1a;
-                                }
-                                
-                                .bid>p {
-                                    font-size: 13px;
-                                }
-                                
-                                .userForm {
-                                    gap: 15px;
-                                    align-items: center;
-                                }
-                                
-                                .artistUser>p {
-                                    margin: 6px 0;
-                                }
-                                
-                                .userForm>img {
-                                    width: 53px;
-                                    height: 53px;
-                                    border-radius: 50%;
-                                }
-                                /* section 4 */
-                                
-                                .section4 {
-                                    align-items: center;
-                                    margin-top: 60px;
-                                    position: relative;
-                                    flex-direction: column;
-                                    overflow-x: clip;
-                                }
-                                
-                                .blur4 {
-                                    z-index: 1;
-                                    top: 0;
-                                    left: 0;
-                                }
-                                
-                                .section4Wraper {
-                                    width: 34%;
-                                    text-align: center;
-                                }
-                                
-                                .section4BoxWrap {
-                                    justify-content: space-evenly;
-                                }
-                                
-                                .section4Text>button {
-                                    width: 216px;
-                                    height: 70px;
-                                    background-color: #A9DEEE;
-                                    border: none;
-                                    color: #123B53;
-                                    font-weight: 800;
-                                    margin-top: 45px;
-                                }
-                                
-                                .section4Title {
-                                    margin-top: 140px;
-                                }
-                                
-                                .section4SmollBox {
-                                    justify-content: center;
-                                    align-items: center;
-                                    width: 25%;
-                                    height: 330px;
-                                    background-color: #a9deee1a;
-                                    margin: 90px 0 140px;
-                                }
-                                
-                                .section4SmollBoxContent {
-                                    width: 77%;
-                                    height: 85%;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    gap: 30px;
-                                }
-                                
-                                .section4SmollBoxContent>div {
-                                    width: 52px;
-                                    height: 52px;
-                                    background-color: #A9DEEE;
-                                    box-shadow: 10px 10px #b1e0ee1a;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-size: 18px;
-                                    font-weight: 700;
-                                }
-                                
-                                .section4SmollBoxContent>h3 {
-                                    color: #fff;
-                                }
-                                
-                                .section4SmollBoxContent>p {
-                                    line-height: 36px;
-                                    text-align: center;
-                                }
-                                
-                                .blur5 {
-                                    top: 750px;
-                                    left: 965px;
-                                }
-                                /* section 5 */
-                                
-                                .section5 {
-                                    justify-content: center;
-                                }
-                                
-                                .section5Box {
-                                    width: 85%;
-                                    height: 440px;
-                                    background-color: #A9DEEE;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-                                    gap: 40px;
-                                    /* border-top: 10px solid #e1d2d2;
-                                    border-color: linear-gradient(#e66465, #9198e5); */
-                                    /* box-shadow: inset 0px 11px 0px 0px linear-gradient(#e1d2d2, #0c1366); */
-                                }
-                                
-                                .section5Box>h2 {
-                                    font-size: 53px;
-                                    line-height: 74px;
-                                    width: 40%;
-                                    text-align: center;
-                                    color: #123B53;
-                                }
-                                
-                                .btnEmail {
-                                    justify-content: space-around;
-                                    width: 40%;
-                                    height: 98px;
-                                    background-color: #123B53;
-                                    align-items: center;
-                                }
-                                
-                                .btnEmail>button {
-                                    width: 35%;
-                                    height: 70%;
-                                    background-color: #A9DEEE;
-                                    border: none;
-                                    color: #123B53;
-                                    font-weight: 800;
-                                }
-                                
-                                .btnEmail>a {
-                                    align-items: center;
-                                    gap: 20px;
-                                }
-                                /* footer */
-                                
-                                footer {
-                                    justify-content: flex-start;
-                                    flex-direction: column;
-                                    margin: 140px 0;
-                                    scroll-behavior: smooth;
-                                }
-                                
-                                .footerWraper {
-                                    justify-content: center;
-                                }
-                                
-                                .footerDiv {
-                                    justify-content: space-between;
-                                    width: 80%;
-                                }
-                                
-                                .footerTitle {
-                                    width: 25%;
-                                }
-                                
-                                .footerTitle>h2 {
-                                    color: #A9DEEE;
-                                    font-size: 34px;
-                                    gap: 14px;
-                                }
-                                
-                                .footerTitle>p {
-                                    line-height: 34px;
-                                    margin: 35px 0;
-                                }
-                                
-                                .footerList {
-                                    width: 50%;
-                                    justify-content: space-between;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .footerUl {
-                                    width: 100%;
-                                    justify-content: space-between;
-                                    flex-wrap: wrap;
-                                }
-                                
-                                .liTitle {
-                                    font-size: 24px;
-                                    font-weight: 700;
-                                    color: #FAFAFA;
-                                }
-                                
-                                .footerList li {
-                                    margin-top: 30px;
-                                    opacity: 0.85;
-                                }
-                                
-                                .contact {
-                                    width: 25%;
-                                    gap: 27px;
-                                }
-                                
-                                .contact>img {
-                                    width: 46px;
-                                    height: 45px;
-                                }
-                                
-                                .btnEmailRes {
-                                    display: none;
-                                }
-                                
-                                .displayNone1 {
-                                    display: none;
-                                }
+
+.conenect > button {
+    margin-left: 60px;
+    width: 190px;
+    height: 70px;
+    background-color: #123b53;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.section1Wraper,
+.section2Wraper {
+    justify-content: center;
+    margin-top: 83px;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.section1LeftBox {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section1LeftBox,
+.section2LeftBox {
+    width: 40%;
+}
+
+.section1LeftBox > h2,
+.section2LeftBox > h2,
+.section3Title > h2,
+.section4Title > h2 {
+    font-size: 52px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.section1LeftBox > p,
+.section2LeftBox > p {
+    line-height: 34px;
+    color: #fafafacc;
+    width: 80%;
+    margin: 24px 0 50px;
+}
+
+.section1Btn {
+    width: 100%;
+    height: 15%;
+}
+
+.section1Btn button {
+    width: 35%;
+    height: 85%;
+    border: none;
+    cursor: pointer;
+}
+
+.section1Btn > button:first-of-type {
+    background-color: #a9deee;
+    font-weight: 800;
+    color: #123b53;
+}
+
+.section1Btn > button:last-of-type {
+    background-color: initial;
+    font-weight: 700;
+}
+
+.section1LeftBox > h2 > span,
+.section2LeftBox > h2 > span,
+.section3Title > h2 > span {
+    color: #a9deee;
+}
+
+.section1RinghtBox,
+.section2RinghtBox {
+    width: 550px;
+    height: 550px;
+    background: #fafafa26;
+    backdrop-filter: blur(45px);
+    justify-content: center;
+    align-items: center;
+}
+
+.monkeyImg,
+.monkeyImg2 {
+    width: 85%;
+    height: 85%;
+}
+
+.crushed,
+.crushed2 {
+    width: 55%;
+    height: 35%;
+    background-color: #123b53;
+    position: absolute;
+    bottom: 80px;
+    right: -30px;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+}
+
+.crushed > h3 {
+    color: #fff;
+}
+
+.currentBid {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(169, 222, 238, 0.1);
+    padding: 10px;
+}
+
+.currentBid > p {
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.currentBid > h4,
+.bid > h3,
+.userForm h3 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.currentBid > h4 > span {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.section1BottomLine {
+    width: 100%;
+    height: 186px;
+    background: rgba(250, 250, 250, 0.1);
+    backdrop-filter: blur(45px);
+}
+/* section 2 */
+
+.section2 {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: clip;
+}
+
+.section2Bgimg {
+    position: absolute;
+    top: 186px;
+    left: 0;
+}
+
+.section2Wraper {
+    margin-top: 130px;
+    align-items: center;
+    width: 82%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.monkeyImg2 {
+    box-shadow: -5px 19px 85px -16px #e5e5e5;
+}
+
+.section2RinghtBox {
+    width: 509px;
+    height: 509px;
+}
+
+.crushed2 {
+    bottom: 240px;
+    left: -60px;
+}
+
+.section2Btn {
+    height: 40%;
+}
+
+.section2Register {
+    width: 55%;
+    height: 15vh;
+    background-color: #a9deee;
+    color: #123b53;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.section2LeftBox {
+    height: 70%;
+}
+
+.blur3 {
+    left: 1160px;
+    top: 500px;
+    transform: rotate(-79deg);
+    z-index: 1;
+}
+/* section 3 */
+
+.section3 {
+    margin-top: 140px;
+    overflow-x: clip;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section3Title {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section3Title > h2 {
+    font-size: 52px;
+    line-height: 75px;
+    width: 40%;
+}
+
+.section3Title > p {
+    width: 25%;
+    line-height: 34px;
+}
+
+.sectionWraper {
+    justify-content: center;
+}
+
+.smollBoxImg {
+    width: 360px;
+    height: 360px;
+    background-color: #969696;
+    justify-content: center;
+    align-items: center;
+}
+
+.smollBoxImg > img {
+    width: 85%;
+    height: 85%;
+}
+
+.section3SmollBox {
+    flex-direction: column;
+    padding: 25px;
+}
+
+.bottomSmollBox {
+    padding: 25px;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(169, 222, 238, 0.1);
+}
+
+.bottomSmollBox > h2 {
+    font-size: 24px;
+}
+
+.bottomSmollBox > button {
+    width: 100%;
+    height: 70px;
+    background-color: #a9deee;
+    border: none;
+    color: #123b53;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bottomSmollBox > button:hover {
+    transition: 0.3s;
+    background-color: #84adba;
+}
+
+.bidPrice {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bid {
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+    padding: 20px;
+    background-color: #a9deee1a;
+}
+
+.bid > p {
+    font-size: 13px;
+}
+
+.userForm {
+    gap: 15px;
+    align-items: center;
+}
+
+.artistUser > p {
+    margin: 6px 0;
+}
+
+.userForm > img {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+/* section 4 */
+
+.section4 {
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+    flex-direction: column;
+    overflow-x: clip;
+}
+
+.blur4 {
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.section4Wraper {
+    width: 34%;
+    text-align: center;
+}
+
+.section4BoxWrap {
+    justify-content: space-evenly;
+}
+
+.section4Text > button {
+    width: 216px;
+    height: 70px;
+    background-color: #a9deee;
+    border: none;
+    color: #123b53;
+    font-weight: 800;
+    margin-top: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.section4Text > button:hover {
+    transition: 0.3s;
+    background-color: #84adba;
+}
+
+.section4Title {
+    margin-top: 140px;
+}
+
+.section4SmollBox {
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 330px;
+    background-color: #a9deee1a;
+    margin: 90px 0 140px;
+}
+
+.section4SmollBoxContent {
+    width: 77%;
+    height: 85%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section4SmollBoxContent > div {
+    width: 52px;
+    height: 52px;
+    background-color: #a9deee;
+    box-shadow: 10px 10px #b1e0ee1a;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section4SmollBoxContent > h3 {
+    color: #fff;
+}
+
+.section4SmollBoxContent > p {
+    line-height: 36px;
+    text-align: center;
+}
+
+.blur5 {
+    top: 750px;
+    left: 965px;
+}
+/* section 5 */
+
+.section5 {
+    justify-content: center;
+}
+
+.section5Box {
+    width: 85%;
+    height: 440px;
+    background-color: #a9deee;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.section5Box > h2 {
+    font-size: 53px;
+    line-height: 74px;
+    width: 40%;
+    text-align: center;
+    color: #123b53;
+}
+
+.btnEmail {
+    justify-content: space-around;
+    width: 40%;
+    height: 98px;
+    background-color: #123b53;
+    align-items: center;
+}
+
+.btnEmail > button {
+    width: 35%;
+    height: 70%;
+    background-color: #a9deee;
+    border: none;
+    color: #123b53;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnEmail > button:hover {
+    transition: 0.3s;
+    background-color: #84adba;
+    border-radius: 3px;
+}
+
+.btnEmail > a {
+    align-items: center;
+    gap: 20px;
+}
+/* footer */
+
+footer {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 140px 0;
+    scroll-behavior: smooth;
+}
+
+.footerWraper {
+    justify-content: center;
+}
+
+.footerDiv {
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footerTitle {
+    width: 25%;
+}
+
+.footerTitle > h2 {
+    color: #a9deee;
+    font-size: 34px;
+    gap: 14px;
+}
+
+.footerTitle > p {
+    line-height: 34px;
+    margin: 35px 0;
+}
+
+.footerList {
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerUl {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.liTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fafafa;
+}
+
+.footerList li {
+    margin-top: 30px;
+    opacity: 0.85;
+}
+
+.contact {
+    width: 25%;
+    gap: 27px;
+}
+
+.contact > img {
+    width: 46px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btnEmailRes {
+    display: none;
+}
+
+.displayNone1 {
+    display: none;
+}
